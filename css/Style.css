@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin:0;
+    font-family: 'Source Sans pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+/* =======================
+    Typo
+   ======================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #ffffff;
+    
+}
+
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+h2 + p {
+    margin-top: 0;
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.top-banner{
+    font-size: 0.625rem;
+    font-weight: 900;
+    margin: 0;
+    color: #F18119;
+    text-transform: uppercase;
+    order: -1;
+    border-top: 5px solid #F18119;
+    padding-top: 1px;
+    
+}
+
+
+
+.disclaimer {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+strong { font-weight: 900}
+
+/* =======================
+    Intro section
+   ======================= */
+
+.intro{
+    background-color: #6b6969;
+    background-image: url(../imges/damir-spanic-22L7do1cOho-unsplash\ \(1\).jpg);
+    background-blend-mode: multiply; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 .25em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/* =======================
+    main content
+   ======================= */
+
+.main-content {
+    padding: 2em 1em;
+} 
+
+.intro *,
+.main-content * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* =======================
+    media queries
+   ======================= */
+
+@media (min-width: 580px){
+    body{
+        
+        font-size: 1.125rem; 
+        display:flex;      
+    }
+
+    h1 {
+        font-size:3.5rem;
+    }
+
+    h2,
+    h1 + p{
+        font-size: 1.75rem;
+    }
+
+    .intro {
+        
+        width:60vw;
+        min-height: 100vh;
+    }
+
+    .main-content{
+        width: 40vw;
+        min-height: 100vh;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+/* =======================
+    email collector form
+   ======================= */
+
+   .email-collector {
+
+    width: 80%;
+    max-width: 300px;
+
+   }
+
+   input {
+       width: 100%;
+       border-radius: 5px;
+       padding: 1em;
+       margin-bottom: 1em;
+       text-align: center;
+       font-family: inherit;
+       outline-color: #719ECE;
+       border: 1px solid #404040;
+       
+   }
+
+   input:focus {
+    transform: scale(1.1);
+   }
+
+   .btn {
+       width: 100%;
+       padding: 1em;
+       border-radius: 5px;
+       text-transform: uppercase;
+       border: 0;
+       cursor: pointer;
+       font-weight: 900;
+       letter-spacing: 1px;
+   }
+
+   .btn-main {
+    background: linear-gradient(#ff713b, #ffa51d);
+    color: #ffffff;
+    transform: scale(1);
+    transition: transform 500ms;
+   }
+
+   /* button transition and effects */
+
+   .btn-main:hover {
+       color: #404040;
+       transform: scale(1.1);
+
+   }
+
+   
+
+
